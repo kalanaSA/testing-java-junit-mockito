@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.example.estore.service.UserServiceTest" time="3.443" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\PROJECTS\Testing Java with JUnit 5 &amp; Mockito\10.code-coverage\generate-export-codeCoverageReport-usingMaven\target\test-classes;D:\PROJECTS\Testing Java with JUnit 5 &amp; Mockito\10.code-coverage\generate-export-codeCoverageReport-usingMaven\target\classes;C:\Users\prksa\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\junit-jupiter-5.9.0.jar;C:\Users\prksa\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\prksa\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\prksa\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\prksa\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\prksa\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.jar;C:\Users\prksa\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\prksa\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;C:\Users\prksa\.m2\repository\org\mockito\mockito-junit-jupiter\4.8.0\mockito-junit-jupiter-4.8.0.jar;C:\Users\prksa\.m2\repository\org\mockito\mockito-core\4.8.0\mockito-core-4.8.0.jar;C:\Users\prksa\.m2\repository\net\bytebuddy\byte-buddy\1.12.14\byte-buddy-1.12.14.jar;C:\Users\prksa\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.14\byte-buddy-agent-1.12.14.jar;C:\Users\prksa\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin"/>
+    <property name="sun.java.command" value="C:\Users\prksa\AppData\Local\Temp\surefire1972241770649644192\surefirebooter-20220919044546453_3.jar C:\Users\prksa\AppData\Local\Temp\surefire1972241770649644192 2022-09-19T04-45-45_332-jvmRun1 surefire-20220919044546453_1tmp surefire_0-20220919044546453_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\PROJECTS\Testing Java with JUnit 5 &amp; Mockito\10.code-coverage\generate-export-codeCoverageReport-usingMaven\target\test-classes;D:\PROJECTS\Testing Java with JUnit 5 &amp; Mockito\10.code-coverage\generate-export-codeCoverageReport-usingMaven\target\classes;C:\Users\prksa\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\junit-jupiter-5.9.0.jar;C:\Users\prksa\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\prksa\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\prksa\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\prksa\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\prksa\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.jar;C:\Users\prksa\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\prksa\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar;C:\Users\prksa\.m2\repository\org\mockito\mockito-junit-jupiter\4.8.0\mockito-junit-jupiter-4.8.0.jar;C:\Users\prksa\.m2\repository\org\mockito\mockito-core\4.8.0\mockito-core-4.8.0.jar;C:\Users\prksa\.m2\repository\net\bytebuddy\byte-buddy\1.12.14\byte-buddy-1.12.14.jar;C:\Users\prksa\.m2\repository\net\bytebuddy\byte-buddy-agent\1.12.14\byte-buddy-agent-1.12.14.jar;C:\Users\prksa\.m2\repository\org\objenesis\objenesis\3.2\objenesis-3.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\prksa"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\PROJECTS\Testing Java with JUnit 5 &amp; Mockito\10.code-coverage\generate-export-codeCoverageReport-usingMaven"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\prksa\AppData\Local\Temp\surefire1972241770649644192\surefirebooter-20220919044546453_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.8+10-LTS"/>
+    <property name="user.name" value="prksa"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\prksa\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\prksa\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.8"/>
+    <property name="user.dir" value="D:\PROJECTS\Testing Java with JUnit 5 &amp; Mockito\10.code-coverage\generate-export-codeCoverageReport-usingMaven"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python39\Scripts\;C:\Python39\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Maven\apache-maven-3.6.3\bin;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\ELK\elasticsearch-7.10.1\bin;C:\ELK\kibana-7.10.1-windows-x86_64\bin;C:\ELK\logstash-7.10.1\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Gradle\gradle-7.0\bin;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\prksa\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\bin;;C:\Users\prksa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-11.0.8\bin;C:\Program Files\Gradle\gradle-7.0\bin;C:\Program Files\Maven\apache-maven-3.6.3\bin;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\prksa\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2022.1.2\bin;;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.8+10-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testCreateUser_whenFirstNameNullOrEmpty_shouldThrowsIllegalArgumentException" classname="org.example.estore.service.UserServiceTest" time="2.536"/>
+  <testcase name="testCreateUser_whenLastNameNullOrEmpty_shouldThrowsIllegalArgumentException" classname="org.example.estore.service.UserServiceTest" time="0.006"/>
+  <testcase name="testCreateUser_whenSaveMethodReturnsFalse_shouldThrowsUserServiceException" classname="org.example.estore.service.UserServiceTest" time="0.645"/>
+  <testcase name="testCreateUser_whenScheduleEmailConfirmationThrowsException_shouldThrowsUserServiceException" classname="org.example.estore.service.UserServiceTest" time="0.032"/>
+  <testcase name="testCreateUser_whenUserCreated_scheduleEmailConfirmation" classname="org.example.estore.service.UserServiceTest" time="0.017">
+    <system-out><![CDATA[scheduleEmailConfirmation method called!
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateUser_whenUserDetailsProvided_shouldReturnsUserObject" classname="org.example.estore.service.UserServiceTest" time="0.025"/>
+  <testcase name="testCreateUser_whenSaveMethodThrowsException_shouldThrowsUserServiceException" classname="org.example.estore.service.UserServiceTest" time="0.009"/>
+</testsuite>

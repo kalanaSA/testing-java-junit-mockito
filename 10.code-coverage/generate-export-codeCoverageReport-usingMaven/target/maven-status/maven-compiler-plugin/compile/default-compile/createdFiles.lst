@@ -1,0 +1,10 @@
+org\example\estore\service\UserServiceException.class
+org\example\estore\service\UserServiceImpl.class
+org\example\estore\data\UsersRepository.class
+org\example\estore\data\UsersRepositoryImpl.class
+org\example\estore\Main.class
+org\example\estore\service\EmailVerificationService.class
+org\example\estore\service\EmailNotificationServiceException.class
+org\example\estore\service\EmailVerificationServiceImpl.class
+org\example\estore\model\User.class
+org\example\estore\service\UserService.class
