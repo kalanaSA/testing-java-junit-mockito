@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.9.0'
+
+
+}
+
+test {
+    useJUnitPlatform()
+    // optionally, to enable the standard out and standard error streams, you can add the following property to the test section.
+    testLogging.showStandardStreams = true
+}
