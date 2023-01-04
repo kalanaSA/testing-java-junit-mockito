@@ -1,0 +1,33 @@
+How to test JPA repositories: 
+
+ * what we're not going to test : when we create JPA repository, we usually create an interface that extends another JPA related interface. for example, 'CrudRepository' 
+   interface and 'PagingAndSortingrepository' interface. both of these interfaces are data layer related interfaces, and they define specific methods that we can use to
+   work with our database. for example, 'CrudRepository' interface defines methods that can help us save record into a databse, find record or delete record, and a few 
+   other methods that are related to saving, finding and deleting records. 'PagingAndSortingrepository' interface extends 'CrudRepository' and provides additional methods
+   that help us implement pagination in our application. so we are not going to test methods that are provided by these interfaces. we're not going to test save(), saveAll(),
+   delete() etc methods. these methods are provided to us by the framework and we'll trust that they work well.
+   
+ * What we're actually going to test : 
+   - when testing JPA repositories, we usually test code that was written by us. for example, notice the two methods in the repository interface that extends 
+   'PagingAndSortingrepository' interface. (refer img_1) those are 'query methods' that written by developers addition to the available methods from 
+   'PagingAndSortingrepository'. (custom methods that we've written for specific requirements that is not provided by 'PagingAndSortingrepository') 
+ 
+   - Query methods : the way they work is that, there is a special way in which a name of these query methods is created, and based on the method name spring framework will
+   derive a sql query and it will execute this sql query against the database table. for example, if we consider findByEmail(String email) query method, spring framework 
+   will try to create a sql query that will select the record from a database table with the column name is email, and the value that sits in that column is equal to the 
+   value that we pass as a parameter to this method.
+   - If the method name is completely incorrect, if we did not follow the pattern to create query methods correctly, and we've created method name that is completely 
+   incorrect, then spring framework will not even be able to start application context for our application. so we'll see that our code is failing pretty quickly. and because
+   of this, many developers prefer not to write test methods to test query methods as well. because if the method is incorrect, then our application will fail to start up.
+   but still it is good to test these methods and this is because their names can become more complex, and just to make sure that the method does return information that we
+   expect.
+   - Query method names can become more complex. for example, the findByUserIdAndEmail() query method, or the findByFirstNameAndLastName() query method (refer img_2). these 
+   query methods look more complex, and as a new developer making changes to a very complex query method name, might not be very sure that this method that just updated works
+   as expected and returns the correct information. so in this case, creating a test method for it will give us some confidence that the query method name that w've just 
+   updated or created works as expected, and it returns correct information. although many developers prefer to test those methods that use a sql query.
+   
+   JPQL Query methods : refer the example of query method that uses JPQL query(refer img_3). JPQL stands for Java Persistence Query Language, and we'll use it to write 
+   database independent SQL queries. and writing SQL queries is very helpful in those cases when creating method name becomes complex and confusing. so when we need to 
+   perform a complex SQL query, then creating query method can become more difficult than actually writing a SQL query itself. and in those cases, when we need to write 
+   a custom and very complex SQL query, we'll usually also write a test method to make sure that our query selects correct information. and if someone in the future will
+   edit and break this sql query, then our test method will be able to catch it.
