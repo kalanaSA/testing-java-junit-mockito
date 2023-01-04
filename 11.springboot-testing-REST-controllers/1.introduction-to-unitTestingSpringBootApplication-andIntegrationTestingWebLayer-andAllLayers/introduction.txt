@@ -1,0 +1,73 @@
+
+# Unit Testing in springboot application : Unit testing in a springboot application unlike writing unit tests for a regular java applications previously:
+
+	* consider springboot application that exposes a few API endpoints, and this springboot application has 3 layers.
+		- web/presntation/ui layer : this is where we have our REST controller classes with methods that handle HTTP requests.
+		- service layer : contains methods that perform main business logics. Any complex business logics like for example, sorting or filtering will be done in the service layer class
+		- data layer : service layer to do its work, might need to communicate with other sources like for example with a database. and this is when our service layer class will 
+		  invoke classes and interfaces from data layer. for example, in the data layer we will have data access objects(DAO) or JPA repositories to read and write information
+		  into database.	  
+	* now let's assume that we need to unit test the 'getUsers()' method(refer img_01) for example. because we want to unit test only this one single 'getUsers()' method,
+	  we need to isolate the business logic that is inside of this getUsers() method from it's all external dependencies. this means that we want to isolate the getUsers() 
+	  method from executing real business logic that is in a service or in a data layer. and to do that, we'll need to mock 'userService', and if we mock 'usersService'
+	  then 'usersRepository' will also not be invoked.
+	* to test 'getUsers()' method in isolation we'll also not start the web server. because when we're unit testing, we're not sending real http requests. And this means that 
+	  annotations like @RestController or @GetMapping, they will also not be invoked. our production application code will have this annotations, but unit tests will not use 
+	  them. So none of these annotations will really be used, including @service annotation in the service layer. In fact, when unit testing code in springboot application 
+	  we'll not even load spring application context. Because we're not going to start a web server and because spring application context will not be created, and beacuse
+	  business logic in other layers like service layer and data layer will not even be involved, we'll be able to unit test 'getUsers()' method in isolation from all other
+	  layers and from all other dependencies. So that's unit testing.
+
+# Integration testing in sprinboot application : but sometimes we do need to test if *our code is properly integrated with Spring Framework* and this is when we will start 
+	writing integration tests.
+	
+	* Integration Testing of Web Layer : 
+		
+		- Now if we need to test the getUsers() method is properly integrated with Spring framework and if it works well in Spring web player, we do not want to isolate 
+		  getUsers() method completely. We do want some of spring framework features to be available to us, but only to a web layer. For example, we do want to test 
+		  and make sure that gatUsers() method can be triggered by HTTP GET request and that it can read HTTP request parameters. so in this case we do want annotations
+		  like @RestController or @GetMapping or @RequestMapping to be enabled and to work. so we do want actual integration with Spring framework in the web layer.
+		- But because we're not testing other two layers, we are not testing service layer and we are not testing data layer, we do not need these layers to be enabled
+		  and we do not need them to be loaded into spring application context.
+		- And the good news is that spring framework does allow us to test each layer of our application architecture separately. and there is a way for us to test web
+    	  layer separately from service layer and from data layer. so when we want to test a REST controllers only, we need to work with web layer Only, other layers 
+		  will not be involved. and in this case, spring framework will create spring application context for web layer only, and only those beans that are related to
+		  web layer will be created and will be loaded into spring application context. and beans that are related to service and data layer(Like for example, users 
+		  repository, will not be created and they will not be loaded into spring application context. (refer img_02)
+		- So because other layers are not loaded and are not involved, our test will run faster. the unit test that we will create in this case will be called 'integration
+		  test'. and this is because we are no longer testing the getUsers() method in isolation. This time we are testing getUsers() method and it's integration with Spring
+		  framework.
+		  
+	* Integration Testing with All Layers : 	  
+
+		- when we need to test how our method under test works with all layers integrated, we will write a test method that is called integration test or some developers
+		  also call it acceptance test. and for this test to work, we will need all 3 layers integrated and we will not use any test doubles(mock objects, fake objects).
+		- The test method we will write will test how our getUsers() method works from end to end, meaning that,
+		  in the web layer, HTTP request will be handled and bean validation will be performed.
+		  and in the service layer, a real production version of our code will be executed.
+		  and in the data layer an actual communication with the database will be performed.
+		  so no mocking of any layer or any object will be done.
+		- @SpringbootTest: And for it to work we will need to start application context for all layers in our application. and to do that, Spring framework provides us
+    	  with a special annotation that is called @SpringbootTest. @SpringbootTest annotation will create application context that is very similar to the one we use in
+		  production application. although by default it will not start a web server, but even though a real web server will not be started by default, we can still test
+		  our code integrated with all layers. but if needed we can configure @SpringwoodTest annotation to load a real web environment with embedded server running on 
+		  specific port number or even make it run on a random port number. (refer img_03)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

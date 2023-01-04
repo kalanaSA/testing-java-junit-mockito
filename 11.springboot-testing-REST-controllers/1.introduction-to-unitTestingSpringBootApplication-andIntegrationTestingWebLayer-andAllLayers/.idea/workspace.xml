@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bde873ff-c15a-40cb-a58c-14ebb25ed4d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/intellij-javadocs-4.0.1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/sonarlint/issuestore/4/a/4a831b10439099d44774d0ccc387e808deffaeab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/sonarlint/issuestore/4/f/4fa09adc14d82368588ddf3bffff26ff25011354" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/sonarlint/issuestore/9/f/9f3294dfa12edd16d9943dc9b2d324b5647a9bce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/PlaylistChallenge.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/out/production/PlaylistChallenge/com/company/Album.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/out/production/PlaylistChallenge/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/out/production/PlaylistChallenge/com/company/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/src/com/company/Album.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/src/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Java Programming Masterclass for Software Developers/6. Arrays, Java inbuilt Lists, Autoboxing and Unboxing/PlaylistChallenge/src/com/company/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TDD/pom.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2FbIwQ1L7fYiVTILCVzgB8kZtji" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/PROJECTS/Testing Java with JUnit 5 & Mockito/11.springboot-testing-REST-controllers/1.introduction-to-unitTestingSpringBootApplication-andIntegrationTestingWebLayer-andAllLayers"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bde873ff-c15a-40cb-a58c-14ebb25ed4d8" name="Changes" comment="" />
+      <created>1664754595362</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664754595362</updated>
+      <workItem from="1664754597292" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
